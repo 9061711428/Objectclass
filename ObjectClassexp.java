@@ -1,15 +1,15 @@
 package objectclass;
 //import java.util.Scanner;
-public class Objectclassexp {
+public class ObjectClassexp {
 static int last_num=100;
 int roll_no;
-Objectclassexp()
+Objectclassexp()//Constuctor of Objectclassexp class
 {
 	roll_no=last_num;
 	
 	
 }
-public int hashcode()
+public int hashcode() // Method in Objectclassexp class
 {
 	return roll_no;
 	
@@ -23,12 +23,12 @@ public static void main(String args[])
 	Class c=obj.getClass();
 	System.out.println("class of object obj is:"+ c.getName());
 	s=null;
-	System.gc();
+	System.gc();//Call Garbage collector
 	
 	
 		
 }
-protected  void finalize()
+protected  void finalize() 
 {
 	System.out.println("Finalize method ");
 	
